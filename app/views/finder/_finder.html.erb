@@ -1,0 +1,12 @@
+<%= form_tag('/finder', class: 'row mb-3') do  %>
+  <div class="col-sm-12">
+    <div class="form-floating">
+      <%= text_field_tag :breed, nil, { class: 'form-control', id: 'dogeBreed', value: @doge.breed, required: true } %>
+      <label for="dogeBreed">Breed</label>
+    </div>
+  </div>
+
+  <div class="col-sm-12 text-center mt-3">
+    <%= submit_tag 'Search', class: 'btn btn-primary' %>
+  </div>
+<% end %>
