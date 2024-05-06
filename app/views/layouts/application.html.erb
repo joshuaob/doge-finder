@@ -13,6 +13,15 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="container">
+      <div class="row text-center mt-3 mb-3">
+        <h3>Doge Finder</h3>
+        <p class="lead">Explore top dog breed photos with just a click!</p>
+      </div>
+
+      <%= render "layouts/flash" %>
+
+      <%= yield %>
+    </div>
   </body>
 </html>
