@@ -2,5 +2,5 @@
   <%= turbo_stream.update "flash" %>
   <%= turbo_stream.replace "doge", partial: "doge", locals: { dodge: @doge } %>
 <% else %>
-  <%= turbo_stream.prepend "flash", partial: "layouts/flash", locals: { message: flash[:notice] } %>
+  <%= turbo_stream.replace "flash", partial: "layouts/flash", locals: { message: flash[:notice] } %>
 <% end %>
