@@ -1,6 +1,6 @@
 class BreedFinder
   def self.call(breed:)
-    response = dog_api_client.random(breed:)
+    response = dog_api_client.random(breed: breed.delete(' '))
 
     if response['status'] == "success"
       image = response["message"]
